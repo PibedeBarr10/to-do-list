@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Simple To-Do List</title>
+  <meta name="description" content="A simple to-do list with local storage">
+  <meta name="author" content="Piotr Wojtasiewicz">
+
+  <meta name="theme-color" content="#CCC" >
+
+  <meta property="og:title" content="Simple To-Do List">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="A simple to-do list with local storage">
+  <!--
+    template:
+    https://www.sitepoint.com/a-basic-html5-template/
+   -->
+
+  <link rel="stylesheet" href="css/main.css?v=1.0">
+
+</head>
+
+<body>
+  <div id="app" class="app">
+    <h1>To-Do List</h1>
+    <div
+      id="newtask"
+      class="newtask"
+    >
+      <input
+        type="text"
+        placeholder="Task name..."
+        class="newtask__input--text input--text"
+      >
+      <button
+        id="add"
+        class="newtask__button--add button--add"
+      >
+        Add
+      </button>
+    </div>
+    <ul id="tasks" class="tasks"></ul>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
+
